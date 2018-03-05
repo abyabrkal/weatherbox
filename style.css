@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    margin: 10px;
+}
+
+.weather{
+    width:860px;
+    height: 650px;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(4, 200px);
+    grid-template-areas:
+        "h h h h"
+        "c c l l"
+        "c c m m"
+        "n n p p";
+    grid-auto-flow: dense;
+    border: solid red 1px;
+    
+}
+
+.box{
+    background-color: #c9d6ff;
+    grid-column: span 2;
+    border-radius: 7px;
+}
+
+.box1 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background: url('/assets/goldengate.jpg') no-repeat center;
+    background-size: fill;
+    border-radius: 7px;
+}
+
+.box2 {
+    background: url('/assets/goldengate.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.box3 {
+    background: url('/assets/tokyo.jpg') no-repeat center;
+    background-size: fill;
+    border-radius: 7px;
+}
+
+.box4 {
+    background: url('/assets/berlin.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.box5 {
+    background: url('/assets/goldengate.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+
+.head{
+    grid-column: 1 / -1;
+    background: white;
+    border: none;
+}
+
+
+.head__title {
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: bolder;
+}
